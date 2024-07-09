@@ -1,0 +1,39 @@
+html
+Encabezado (header)
+Navegación: Hay un menú de navegación con enlaces a otras páginas (Carameleria, Cartelera, Principal).
+ Cada enlace incluye una imagen y un texto.
+
+Contenido Principal (main)
+Selección de Asientos: Esta sección permite al usuario ver y seleccionar asientos disponibles en una sala.
+ Muestra el nombre de la sala y el número de asientos disponibles.
+
+Compra de Boletos:
+ Aquí el usuario puede seleccionar la cantidad de boletos que desea comprar para adultos, niños y adultos mayores.
+ Cada tipo de boleto tiene botones para aumentar o disminuir la cantidad, y muestra el precio total por cada tipo de boleto.
+
+Botones de Navegación: Dos botones que permiten al usuario ir a la página de la caramelería o proceder al pago.
+
+javascript
+Precios: 
+Define los precios de los boletos para adultos, niños y adultos mayores.
+
+actualizarTotal: 
+Calcula y actualiza el precio total en función de la cantidad de boletos seleccionados.
+
+Botones de aumento y disminución: 
+Escogen los clics para aumentar o disminuir la cantidad de boletos y actualizan el total.
+
+Parámetros de URL: 
+Extrae los parámetros de la URL para identificar el cine, sala, película y horario.
+
+obtenerAsientos:
+ Recupera los datos de asientos desde la API y los muestra cuando la página se carga.
+
+reservar Asiento: Envía una solicitud para reservar un asiento.
+
+liberar Reserva Asiento: Envía una solicitud para liberar una reserva de asiento.
+
+mostrar Asientos: Crea botones para cada asiento y los clasifica como disponibles, ocupados, reservados o no disponibles.
+
+btn-otro: 
+Valida que la cantidad de boletos y asientos seleccionados coincidan antes de proceder con la reserva y redirige a la página de métodos de pago.

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comprar Boletos</title>
+    <link rel="stylesheet" href="/css/base.css">
+    <link rel="stylesheet" href="/css/asientos.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="carameleria.html" class="carameleria-hover">
+                        <img src="/html/img/Vector.png" class="normal-img" alt="Imagen normal" style="width: 40px; height: 40px; margin-bottom: 5px;">
+                        Carameleria
+                    </a>
+                </li>
+                <li>
+                    <a href="cartelera.html" class="cartelera-hover">
+                        <img src="/html/img/videotime.png" class="normal-img" alt="Imagen normal" style="width: 40px; height: 40px; margin-bottom: 5px;">
+                        Cartelera
+                    </a>
+                </li>
+                <li>
+                    <a href="index.html" class="principal-hover">
+                        <img src="/html/img/videoplay.png" style="width: 38px; height: 38px; margin-bottom: 5px;">
+                        Principal
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="seleccion-asientos">
+            <h3>Selecciona tus asientos en <span id="nombre-sala"></span></h3>
+            <p>Asientos disponibles: <span id="asientos-disponibles">0</span></p>
+            <div class="info-asiento">
+                <p class="info-asiento-selec"> </p>
+                <p>Seleccionados</p>
+                <p class="info-asiento-reser"> </p>
+                <p>Reservados</p>
+                <p class="info-asiento-dispo"> </p>
+                <p>Disponibles</p>
+                <p class="info-asiento-ocu"> </p>
+                <p>Ocupados</p>
+            </div>
+        </section>
+        <section class="boletos">
+            <div class="boleto-adulto">
+                <div class="info">
+                    <h3>Entrada de adulto</h3>
+                    <p>Precio 2$</p>
+                </div>
+                <button class="subtract">-</button>
+                <p class="cantidad ba">0</p>
+                <button class="add">+</button>
+                <p class="precio-adulto">0$</p>
+            </div>
+            <div class="boleto-nino">
+                <div class="info">
+                    <h3>Entrada de niño</h3>
+                    <p>Precio 1$</p>
+                </div>
+                <button class="subtract">-</button>
+                <p class="cantidad bn">0</p>
+                <button class="add">+</button>
+                <p class="precio-nino">0$</p>
+            </div>
+            <div class="boleto-mayor">
+                <div class="info">
+                    <h3>Entrada de adulto mayor</h3>
+                    <p>Precio 1$</p>
+                </div>
+                <button class="subtract">-</button>
+                <p class="cantidad bm">0</p>
+                <button class="add">+</button>
+                <p class="precio-mayor">0$</p> 
+            </div>
+            <div class="total">
+                <p>Total 0$</p>
+            </div>
+        </section>
+        
+        <section>
+            <div id="btn-otro">
+                <ul>
+                    <li><a href="carameleria.html" class="button carameleria">Carameleria &#9654;</a></li>
+                    <li><a href="metodosPago.html" class="button pagar">Pagar &#9654;</a></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <script src="/js/asientos.js"></script>
+</body>
+</html>

@@ -1,0 +1,138 @@
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.movie-info {
+    display: flex;
+    text-align: center;
+}
+
+.movie-info img {
+    width: 150px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    margin-right: 100px;
+}
+
+.movie-info h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.movie-info p {
+    font-size: 18px;
+    color: #a6a6a6;
+}
+
+.payment-methods {
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 20px;
+}
+
+.payment-methods h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.payment-methods label {
+    display: flex;
+    align-items: center;
+    background-color: #08080b;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+label{
+    font-weight: 500;
+}
+.payment-methods label input {
+    margin-right: 10px;
+}
+
+.payment-methods label input:checked + span {
+    color: #ff6b6b;
+}
+
+.payment-methods label span {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.payment-summary {
+    background-color: #2b2c37;
+    padding: 15px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.payment-summary p {
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+.payment-button {
+    display: inline-block;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 25px;
+    color: white;
+    font-weight: bold;
+    background-color: #d9534f;
+}
+
+.payment-button:hover {
+    background-color: #ff4a4a;
+}
+
+.custom-checkbox {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    position: relative;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.custom-checkbox input {
+    display: none;
+}
+
+.custom-checkbox .checkmark {
+    width: 20px;
+    height: 20px;
+    background-color: #08080b;
+    border: 3px solid #645aa7;
+    border-radius: 4px;
+    margin-right: 10px;
+    transition: background-color 0.3s;
+}
+
+.custom-checkbox .checkmark::after {
+    content: "";
+    position: absolute;
+    display: none;
+    left: 18px;
+    top: 13px;
+    width: 5px;
+    height: 10px;
+    border: solid #ff4a4a;
+    border-width: 0 4px 4px 0;
+    transform: rotate(45deg);
+}
+
+.custom-checkbox input:checked + .checkmark::after {
+    display: block;
+}
